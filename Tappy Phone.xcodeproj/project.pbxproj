@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F9E93D152DF33A188514518 /* Pods_Tappy_Phone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF5C86E0A62AF4D4B069B12 /* Pods_Tappy_Phone.framework */; };
 		E8A9684C2170EBCE00911249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A9684B2170EBCE00911249 /* AppDelegate.swift */; };
 		E8A9684E2170EBCE00911249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A9684D2170EBCE00911249 /* ViewController.swift */; };
 		E8A968512170EBCE00911249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A9684F2170EBCE00911249 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68B4DBC565ADEEB3D9BCC898 /* Pods-Tappy Phone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tappy Phone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tappy Phone/Pods-Tappy Phone.release.xcconfig"; sourceTree = "<group>"; };
+		7AF5C86E0A62AF4D4B069B12 /* Pods_Tappy_Phone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tappy_Phone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A968482170EBCE00911249 /* Tappy Phone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tappy Phone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A9684B2170EBCE00911249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8A9684D2170EBCE00911249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		E8A968572170EBD100911249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A9685D2170EF8300911249 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E8A9685F2170EFC300911249 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		F35D491DF212C860D02422A9 /* Pods-Tappy Phone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tappy Phone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tappy Phone/Pods-Tappy Phone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9E93D152DF33A188514518 /* Pods_Tappy_Phone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36D118F199B809ADD097F789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AF5C86E0A62AF4D4B069B12 /* Pods_Tappy_Phone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5168D1A8AD9E402A50BF9F91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F35D491DF212C860D02422A9 /* Pods-Tappy Phone.debug.xcconfig */,
+				68B4DBC565ADEEB3D9BCC898 /* Pods-Tappy Phone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E8A9683F2170EBCE00911249 = {
 			isa = PBXGroup;
 			children = (
 				E8A9684A2170EBCE00911249 /* Tappy Phone */,
 				E8A968492170EBCE00911249 /* Products */,
+				5168D1A8AD9E402A50BF9F91 /* Pods */,
+				36D118F199B809ADD097F789 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8A9685A2170EBD100911249 /* Build configuration list for PBXNativeTarget "Tappy Phone" */;
 			buildPhases = (
+				85C1D2211C93EAB2245D3B15 /* [CP] Check Pods Manifest.lock */,
 				E8A968442170EBCE00911249 /* Sources */,
 				E8A968452170EBCE00911249 /* Frameworks */,
 				E8A968462170EBCE00911249 /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85C1D2211C93EAB2245D3B15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tappy Phone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8A968442170EBCE00911249 /* Sources */ = {
@@ -288,8 +334,10 @@
 		};
 		E8A9685B2170EBD100911249 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35D491DF212C860D02422A9 /* Pods-Tappy Phone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Y7BXN4F4K;
 				INFOPLIST_FILE = "Tappy Phone/Info.plist";
@@ -299,6 +347,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coryb.Tappy-Phone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,8 +355,10 @@
 		};
 		E8A9685C2170EBD100911249 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B4DBC565ADEEB3D9BCC898 /* Pods-Tappy Phone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Y7BXN4F4K;
 				INFOPLIST_FILE = "Tappy Phone/Info.plist";
@@ -317,6 +368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coryb.Tappy-Phone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

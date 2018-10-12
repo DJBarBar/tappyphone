@@ -90,6 +90,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="XhD-cL-jBc" id="7eC-7G-zlw"/>
                         <outlet property="button" destination="mPm-7c-M7B" id="QoT-8s-fHg"/>
                         <outlet property="label1" destination="V5S-Ik-ckU" id="glu-PI-JGO"/>
                         <outlet property="label2" destination="dWA-5p-2me" id="fpU-c0-CeI"/>
@@ -159,6 +160,9 @@
                                 <state key="normal" title="Tap Me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapMeButton:" destination="bQa-42-MpR" eventType="touchUpInside" id="GdJ-A9-wfM"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRx-8u-a2M" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="686" width="414" height="50"/>
@@ -202,6 +206,7 @@
                         <viewLayoutGuide key="safeArea" id="Vkr-t1-Y0M"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="zRx-8u-a2M" id="UPS-Co-3Co"/>
                         <outlet property="button" destination="NNZ-y2-hVa" id="GFr-3l-3WN"/>
                         <outlet property="label1" destination="kfY-1b-HII" id="ETg-QM-VZF"/>
                         <outlet property="label2" destination="pTr-zx-6M0" id="qvp-tP-vHU"/>
@@ -260,6 +265,9 @@
                                 <state key="normal" title="Restart">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="restartGame:" destination="NEh-GY-hUT" eventType="touchUpInside" id="J36-nm-lRW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-Oy-VSZ">
                                 <rect key="frame" x="16" y="196" width="382" height="75"/>
@@ -271,6 +279,9 @@
                                 <state key="normal" title="Share Score">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareButton:" destination="NEh-GY-hUT" eventType="touchUpInside" id="he7-s2-5ch"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEm-dd-AGd" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="686" width="414" height="50"/>
@@ -308,6 +319,7 @@
                         <viewLayoutGuide key="safeArea" id="ZYG-Mb-Unf"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="pEm-dd-AGd" id="0Ha-Hn-DXt"/>
                         <outlet property="label1" destination="yEG-LL-dYe" id="xGF-IO-S7k"/>
                         <outlet property="restartButton" destination="CAr-gl-AxP" id="xkD-vq-z1o"/>
                         <outlet property="scoreLabel" destination="nGz-gE-oox" id="WPq-yr-r7y"/>
