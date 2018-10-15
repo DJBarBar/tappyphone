@@ -108,6 +108,10 @@ class StoreViewController: UIViewController, SKPaymentTransactionObserver, SKPro
                 productDescription.text = "The product has been purchased"
                 buyButton.isEnabled = false
                 
+                let save = UserDefaults.standard
+                save.set(true, forKey: "Purchase")
+                save.synchronize()
+                
             case SKPaymentTransactionState.failed:
                 
                 SKPaymentQueue.default().finishTransaction(transaction)

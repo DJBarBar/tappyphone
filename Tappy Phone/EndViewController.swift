@@ -39,11 +39,22 @@ class EndViewController: UIViewController, GADBannerViewDelegate {
         
         bannerView.delegate = self
         
-        bannerView.adUnitID = "ca-app-pub-8758014690935874/9772971215"
-        bannerView.adSize = kGADAdSizeSmartBannerPortrait
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
+        let save = UserDefaults.standard
+        if save.value(forKey: "Purchase") == nil {
+            
+            bannerView.adUnitID = "ca-app-pub-8758014690935874/9772971215"
+            bannerView.adSize = kGADAdSizeSmartBannerPortrait
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
+            
+        } else {
+            
+            bannerView.isHidden = true
+        }
     }
     
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {

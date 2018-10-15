@@ -29,11 +29,6 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         
         bannerView.delegate = self
         
-        bannerView.adUnitID = "ca-app-pub-8758014690935874/9772971215"
-        bannerView.adSize = kGADAdSizeSmartBannerPortrait
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-        
     }
     
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
@@ -60,6 +55,20 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         } else {
             
             label2.text = value
+            
+        }
+        
+        let save = UserDefaults.standard
+        if save.value(forKey: "purchase") == nil {
+            
+            bannerView.adUnitID = "ca-app-pub-8758014690935874/9772971215"
+            bannerView.adSize = kGADAdSizeSmartBannerPortrait
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
+            
+        } else {
+            
+            bannerView.isHidden = true
             
         }
         
