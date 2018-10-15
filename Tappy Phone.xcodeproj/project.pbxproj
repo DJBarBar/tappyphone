@@ -16,6 +16,7 @@
 		E8A9685E2170EF8300911249 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A9685D2170EF8300911249 /* GameViewController.swift */; };
 		E8A968602170EFC400911249 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A9685F2170EFC300911249 /* EndViewController.swift */; };
 		E8ED7F262174623D00E2549E /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED7F252174623D00E2549E /* StoreViewController.swift */; };
+		E8ED7F282174D64200E2549E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8ED7F272174D64200E2549E /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E8A9685D2170EF8300911249 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E8A9685F2170EFC300911249 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		E8ED7F252174623D00E2549E /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		E8ED7F272174D64200E2549E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F35D491DF212C860D02422A9 /* Pods-Tappy Phone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tappy Phone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tappy Phone/Pods-Tappy Phone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8ED7F282174D64200E2549E /* StoreKit.framework in Frameworks */,
 				8F9E93D152DF33A188514518 /* Pods_Tappy_Phone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +52,7 @@
 		36D118F199B809ADD097F789 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8ED7F272174D64200E2549E /* StoreKit.framework */,
 				7AF5C86E0A62AF4D4B069B12 /* Pods_Tappy_Phone.framework */,
 			);
 			name = Frameworks;
