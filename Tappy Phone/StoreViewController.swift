@@ -13,6 +13,7 @@ class StoreViewController: UIViewController, SKPaymentTransactionObserver, SKPro
     
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
     
     @IBOutlet weak var buyButton: UIButton!
     
@@ -27,6 +28,7 @@ class StoreViewController: UIViewController, SKPaymentTransactionObserver, SKPro
         
         label1.layer.cornerRadius = 5.0
         button1.layer.cornerRadius = 5.0
+        button2.layer.cornerRadius = 5.0
         buyButton.layer.cornerRadius = 5.0
         
         buyButton.isEnabled = false
@@ -47,6 +49,12 @@ class StoreViewController: UIViewController, SKPaymentTransactionObserver, SKPro
         
         let payment = SKPayment(product: product!)
         SKPaymentQueue.default().add(payment)
+        
+    }
+    
+    @IBAction func restore(_ sender: Any) {
+        
+        SKPaymentQueue.default().restoreCompletedTransactions()
         
     }
     
@@ -102,6 +110,17 @@ class StoreViewController: UIViewController, SKPaymentTransactionObserver, SKPro
             
             switch transaction.transactionState {
             case SKPaymentTransactionState.purchased:
+                
+                SKPaymentQueue.default().finishTransaction(transaction)
+                productTitle.text = "Thank you"
+                productDescription.text = "The product has been purchased"
+                buyButton.isEnabled = false
+                
+                let save = UserDefaults.standard
+                save.set(true, forKey: "Purchase")
+                save.synchronize()
+                
+            case SKPaymentTransactionState.restored:
                 
                 SKPaymentQueue.default().finishTransaction(transaction)
                 productTitle.text = "Thank you"
