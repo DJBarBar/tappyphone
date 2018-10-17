@@ -17,6 +17,7 @@
 		E8A968602170EFC400911249 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A9685F2170EFC300911249 /* EndViewController.swift */; };
 		E8ED7F262174623D00E2549E /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED7F252174623D00E2549E /* StoreViewController.swift */; };
 		E8ED7F282174D64200E2549E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8ED7F272174D64200E2549E /* StoreKit.framework */; };
+		E8ED7F2A2174F62E00E2549E /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8ED7F292174F62E00E2549E /* iPadStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E8A9685F2170EFC300911249 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		E8ED7F252174623D00E2549E /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		E8ED7F272174D64200E2549E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E8ED7F292174F62E00E2549E /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		F35D491DF212C860D02422A9 /* Pods-Tappy Phone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tappy Phone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tappy Phone/Pods-Tappy Phone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				E8A9685F2170EFC300911249 /* EndViewController.swift */,
 				E8ED7F252174623D00E2549E /* StoreViewController.swift */,
 				E8A9684F2170EBCE00911249 /* Main.storyboard */,
+				E8ED7F292174F62E00E2549E /* iPadStoryboard.storyboard */,
 				E8A968522170EBD100911249 /* Assets.xcassets */,
 				E8A968542170EBD100911249 /* LaunchScreen.storyboard */,
 				E8A968572170EBD100911249 /* Info.plist */,
@@ -163,6 +166,7 @@
 				E8A968562170EBD100911249 /* LaunchScreen.storyboard in Resources */,
 				E8A968532170EBD100911249 /* Assets.xcassets in Resources */,
 				E8A968512170EBCE00911249 /* Main.storyboard in Resources */,
+				E8ED7F2A2174F62E00E2549E /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

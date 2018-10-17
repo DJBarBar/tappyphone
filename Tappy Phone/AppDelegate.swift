@@ -20,6 +20,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GADMobileAds.configure(withApplicationID: "ca-app-pub-8758014690935874~9118365092")
         
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            
+            var mainView: UIStoryboard
+            mainView = UIStoryboard(name: "Main", bundle: nil)
+            
+            let VC: UIViewController = mainView.instantiateViewController(withIdentifier: "iPhoneStoryboard") as UIViewController
+            self.window!.rootViewController = VC
+            
+        }
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            
+            var mainView: UIStoryboard
+            mainView = UIStoryboard(name: "iPadStoryboard", bundle: nil)
+            
+            let VC: UIViewController = mainView.instantiateViewController(withIdentifier: "iPadStoryboard") as UIViewController
+            self.window!.rootViewController = VC
+            
+        }
+        
         return true
     }
 

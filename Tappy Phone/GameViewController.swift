@@ -157,11 +157,25 @@ class GameViewController: UIViewController, GADBannerViewDelegate {
     
     @objc func end() {
         
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "endGame") as! EndViewController
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "endGame") as! EndViewController
+            
+            vc.scoreData = scoreLabel.text
+            
+            self.present(vc, animated: false, completion: nil)
+            
+        }
         
-        vc.scoreData = scoreLabel.text
-        
-        self.present(vc, animated: false, completion: nil)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            
+            let vc = UIStoryboard(name: "iPadStoryboard", bundle: nil).instantiateViewController(withIdentifier: "endGame") as! EndViewController
+            
+            vc.scoreData = scoreLabel.text
+            
+            self.present(vc, animated: false, completion: nil)
+            
+        }
         
     }
     
